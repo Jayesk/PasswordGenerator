@@ -3,6 +3,7 @@ import random
 import string
 import colorama
 from colorama import Fore
+import os
 
 num = 1
 
@@ -31,7 +32,7 @@ elif special == 'n' and numbers == 'y':
 		))
 
 	print(f"Password: {code}")
-	
+
 elif special == 'y' and numbers == 'n':
 	for i in range(num):
 			code = "".join(random.choices(
@@ -48,4 +49,4 @@ else:
 					k = inputtedlength
 	))
 
-print(f"Password: {code}")
+	print(f"Password: {code}")
